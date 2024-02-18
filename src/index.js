@@ -27,7 +27,7 @@ const sync = new Deobfuscator()
 const btnDeobfuscate = document.getElementById('btn-deobfuscate'),
   btnSave = document.getElementById('btn-save')
 
-function deobfuscateWithWorker(source, timeout = 120000) {
+function deobfuscateWithWorker(source, timeout = 1800000) {
   return new Promise((resolve, reject) => {
     Log.log(
       'info',
